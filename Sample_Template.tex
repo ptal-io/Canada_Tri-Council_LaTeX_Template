@@ -1,0 +1,83 @@
+
+\documentclass[12pt]{article} %make sure that we are using 12 pt font
+\usepackage{fancyhdr}
+\usepackage[margin=1.9cm]{geometry}%rounded up from 1.87, just to be safe...
+\usepackage{parskip}
+\usepackage{xcolor}
+\usepackage{natbib}
+\definecolor{darkblue}{RGB}{50,50,50}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, 
+	linktocpage=true,
+	breaklinks=true, 
+	pageanchor=true,
+	plainpages=false, 
+	hypertexnames=true,
+	urlcolor=darkblue, 
+	linkcolor=darkblue,
+	citecolor=darkblue, 
+	pdftitle={Canada Tri-Council Grant},
+	pdfauthor={Grant McKenzie},
+	pdfsubject={Grant McKenzie},
+	pdfkeywords={Grant McKenzie},
+	pdfcreator={pdfLaTeX},
+	pdfproducer={LaTeX via TeX Live on GNU/LINUX}
+}
+\usepackage{times} %make sure that the times new roman is used
+\usepackage{titlesec}
+
+% Set Section header sizes to normal font size
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+%\makeatletter
+
+\fancyhf{}
+\lfoot{\thepage} % page number in bottom left
+
+\begin{document}
+	
+% Set top margin of page with relevant information
+\pagestyle{fancy}
+\rhead{Name, My}
+\lhead{Name of Agency and Call -- Detailed Description}
+\renewcommand{\headrulewidth}{0pt}
+
+\raggedright
+
+% I find it helpful to have the summary in the same document at the beginning.  Take it out before final PDF
+%\input{Summary}
+
+
+\pagebreak
+
+% ======================== DETAILED DESCRIPTION ========================
+
+\section{Objectives}
+
+
+\section{Context}
+
+
+\section{Methodology}
+
+
+
+% ======================== LIST OF REFERENCES ========================
+\pagebreak
+\renewcommand{\section}[2]{} % Hide References title
+
+% Reset Page Numbering
+\clearpage
+\pagenumbering{arabic}
+ 
+% Reset Header for References
+\lhead{Name of Agency and Call -- List of References}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\bibliography{main.bib}
+\bibliographystyle{apalike}
+
+\end{document}

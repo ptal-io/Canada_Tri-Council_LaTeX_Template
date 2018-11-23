@@ -1,1 +1,1 @@
-# Canada_Tri-Council_LaTeX_Template
+# Canadian Tri-Council LaTeX Template

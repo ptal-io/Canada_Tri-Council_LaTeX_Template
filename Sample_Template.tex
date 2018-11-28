@@ -38,46 +38,15 @@
 
 \begin{document}
 	
-% Set top margin of page with relevant information
-\pagestyle{fancy}
-\rhead{Name, My}
-\lhead{Name of Agency and Call -- Detailed Description}
-\renewcommand{\headrulewidth}{0pt}
 
-\raggedright
+
 
 % I find it helpful to have the summary in the same document at the beginning.  Take it out before final PDF
-%\input{Summary}
-
-
+\input{Summary}
 \pagebreak
-
-% ======================== DETAILED DESCRIPTION ========================
-
-\section{Objectives}
-
-
-\section{Context}
-
-
-\section{Methodology}
-
-
-
-% ======================== LIST OF REFERENCES ========================
+\input{DetailedDescription}
 \pagebreak
-\renewcommand{\section}[2]{} % Hide References title
+\input{References}
 
-% Reset Page Numbering
-\clearpage
-\pagenumbering{arabic}
- 
-% Reset Header for References
-\lhead{Name of Agency and Call -- List of References}
-\renewcommand{\headrulewidth}{0pt}
-
-
-\bibliography{main.bib}
-\bibliographystyle{apalike}
 
 \end{document}

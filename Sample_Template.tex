@@ -32,9 +32,9 @@
 \titleformat*{\subsection}{\normalsize\bfseries}
 
 %\makeatletter
-
 \fancyhf{}
 \lfoot{\thepage} % page number in bottom left
+\raggedright
 
 \begin{document}
 	
@@ -42,11 +42,11 @@
 
 
 % I find it helpful to have the summary in the same document at the beginning.  Take it out before final PDF
-\input{Summary}
+\input{content_Summary}
 \pagebreak
-\input{DetailedDescription}
+\input{content_DetailedDescription}
 \pagebreak
-\input{References}
+\input{content_References}
 
 
 \end{document}

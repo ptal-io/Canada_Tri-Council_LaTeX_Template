@@ -27,9 +27,13 @@
 \usepackage{times} %make sure that the times new roman is used
 \usepackage{titlesec}
 
-% Set Section header sizes to normal font size
+% Set Section header sizes, styles, and spacing above and below.
+\titlespacing{\section}{0pt}{\parskip}{-3pt}
+\titlespacing{\subsection}{0pt}{\parskip}{-4pt}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-4pt}
 \titleformat*{\section}{\normalsize\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\em}
 
 %\makeatletter
 \fancyhf{}
